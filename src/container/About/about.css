@@ -1,0 +1,107 @@
+.anand__about {
+    padding: 50px 0;
+    background-color: #fff;
+  }
+  
+  .anand__about_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .anand__about_container_left {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .anand__about_container_left h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .anand__about_container_left p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  .anand__about_container_right {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .anand__about_container_right h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .anand__about_container_right ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    list-style: disc;
+  }
+  
+  .anand__about_container_right li {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  .anand__button {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #06c;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .anand__button:hover {
+    background-color: #fff;
+    color: #06c;
+    border: 2px solid #06c;
+  }
+/* Small devices (mobile) */
+/* Small devices (mobile) */
+@media only screen and (max-width: 480px) {
+    .anand__about_container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .anand__about_container_left,
+    .anand__about_container_right {
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box; /* add this line */
+      text-align: center;
+    }
+    .anand__about_container_right {
+      margin-top: 30px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .anand__about_container_right ul {
+      list-style: none;
+      text-align: center;
+      padding-left: 0;
+    }
+    .anand__about_container_right li {
+      margin-bottom: 10px;
+    }
+  }
+  .anand__about {
+    background-color: #f2f2f2;
+  }
+      
+  

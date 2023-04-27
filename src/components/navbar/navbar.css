@@ -1,0 +1,139 @@
+.anand__navbar {
+    background: linear-gradient(to right, #004AAD, #348AC7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+  }
+  
+  .anand__navbar_links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .anand__navbar_links a {
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .anand__navbar_links a:hover {
+    color: black;
+  }
+  
+  .anand__navbar_menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .anand__navbar_menu_box {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .anand__navbar_menu_box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .anand__navbar_menu_box li {
+    margin: 10px 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .anand__navbar{
+        padding: 0 9px;
+    }
+    .anand__navbar_links {
+      display: none;
+    }
+  
+    .anand__navbar_menu {
+      display: block;
+    }
+  
+    .anand__navbar_menu_box {
+
+    }
+  
+    .anand__navbar_menu_box.show {
+      display: flex;
+    }
+  }
+  .anand__navbar_menu_box {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.anand__navbar_menu_box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.anand__navbar_menu_box li {
+  margin: 10px 0;
+}
+
+.anand__navbar_menu_box a {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.anand__navbar_menu_box a:hover {
+  color: #ccc;
+}
+
+.anand__navbar_menu_box .close-btn {
+  
+}
+.anand__navbar_menu_close_button{
+    position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+
+}
+
+@media screen and (max-width: 768px) {
+  .anand__navbar_links {
+    display: none;
+  }
+
+  .anand__navbar_menu {
+    display: block;
+  }
+
+  .anand__navbar_menu_box.show {
+    display: flex;
+  }
+}

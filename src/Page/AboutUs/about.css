@@ -1,0 +1,127 @@
+.anand__about {
+    padding: 50px;
+    background-color: #f2f2f2;
+  }
+  
+  .anand__about_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  .anand__about_container_left {
+    flex-basis: 50%;
+    padding-right: 20px;
+  }
+  
+  .anand__about_container_left h1 {
+    color: #2c3e50;
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .anand__about_container_left p {
+    color: #2c3e50;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .anand__about_container_right {
+    flex-basis: 50%;
+  }
+  
+  .anand__about_container_right h2 {
+    color: #2c3e50;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .anand__about_container_right li {
+    color: #2c3e50;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  .anand__about_container__down {
+    background-color: #fff;
+    padding: 50px;
+  }
+  
+  .anand__about_container__down_center h1 {
+    color: #2c3e50;
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .anand__about_container__down_center p {
+    color: #2c3e50;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .anand__about_container__down_center ul li {
+    color: #2c3e50;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  @media only screen and (max-width: 768px) {
+    .anand__about {
+    padding: 30px;
+    }
+    
+    .anand__about_container {
+    flex-direction: column;
+    margin-bottom: 30px;
+    }
+    
+    .anand__about_container_left {
+    flex-basis: 100%;
+    padding-right: 0;
+    margin-bottom: 30px;
+    }
+    
+    .anand__about_container_left h1 {
+    font-size: 28px;
+    }
+    
+    .anand__about_container_left p {
+    font-size: 16px;
+    }
+    
+    .anand__about_container_right {
+    flex-basis: 100%;
+    }
+    
+    .anand__about_container_right h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    }
+    
+    .anand__about_container_right li {
+    font-size: 16px;
+    margin-bottom: 8px;
+    }
+    
+    .anand__about_container__down {
+    padding: 30px;
+    }
+    
+    .anand__about_container__down_center h1 {
+    font-size: 28px;
+    }
+    
+    .anand__about_container__down_center p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    }
+    
+    .anand__about_container__down_center ul li {
+    font-size: 16px;
+    margin-bottom: 8px;
+    }
+    }

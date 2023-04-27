@@ -1,0 +1,23 @@
+.products-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .brand-list {
+    list-style: none;
+  }
+  
+  .brand-list li {
+    margin-bottom: 20px;
+  }
+  
+  .product-list {
+    list-style: none;
+    margin-left: 20px;
+  }
+  
+  .product-list li {
+    margin-bottom: 10px;
+  }
+  
