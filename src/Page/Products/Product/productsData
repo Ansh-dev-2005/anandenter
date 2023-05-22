@@ -1,0 +1,32 @@
+const productsData = [
+    {
+      id: 1,
+      name: "Product A",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      price: 9.99,
+      image: "https://example.com/product-a.jpg",
+      category: "Category A",
+      rating: 4.5
+    },
+    {
+      id: 2,
+      name: "Product B",
+      description: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+      price: 19.99,
+      image: "https://example.com/product-b.jpg",
+      category: "Category B",
+      rating: 3.8
+    },
+    {
+      id: 3,
+      name: "Product C",
+      description: "Etiam vehicula velit quis nunc bibendum, vel molestie orci varius.",
+      price: 14.99,
+      image: "https://example.com/product-c.jpg",
+      category: "Category A",
+      rating: 4.2
+    },
+  ];
+  
+  export default productsData;
+  

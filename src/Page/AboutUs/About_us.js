@@ -1,3 +1,10 @@
+/**
+ * The function returns a React component for the About Us page, which includes information about the
+ * company, its partnerships, and why customers should choose them, as well as a header and footer
+ * component.
+ * @returns The AboutUs component is being returned, which contains JSX elements for the about section,
+ * why choose us section, our partnerships section, and header and footer components.
+ */
 import React from 'react';
 import './about.css';
 import Header from '../../container/Header/Header';

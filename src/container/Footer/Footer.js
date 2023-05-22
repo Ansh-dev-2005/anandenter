@@ -21,8 +21,8 @@ const Footer = () => {
                 <h1>Explore</h1>
                 {/*Quick Links */}
                 <ul className='anand__footer__container__center-links'>
-                    <li>Home</li>
-                    <li>About Us</li>
+                    <a href='/'><li>Home</li></a>
+                    <a href='/about'><li>About Us</li></a>
                     <li>Our Deals</li>
                     <li>Reviews</li>
                     <li>Contact Us</li>

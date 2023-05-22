@@ -1,0 +1,48 @@
+.contact {
+    background-color: #f5f5f5;
+  }
+  
+  .contact__content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .contact__heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .contact__text {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .contact__options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .contact__option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .contact__option:hover {
+    color: #007bff;
+  }
+  
+  .contact__option img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .contact__option span {
+    font-size: 14px;
+  }
+  

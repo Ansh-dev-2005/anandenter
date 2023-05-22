@@ -45,6 +45,19 @@
   .anand__footer__container__center-links {
     list-style: none;
     padding-left: 0;
+    text-decoration: none;
+  }
+  .anand__footer__container__center-links li a{
+    text-decoration: none;
+    color: #fff;
+  }
+  a:hover{
+    color: #00bcd4;
+    cursor: pointer;
+  }
+  a{
+    text-decoration: none;
+    color: #fff;
   }
   
   .anand__footer__container__center-links li {
@@ -93,6 +106,8 @@
     color: #fff;
     margin-right: 0.5rem;
   }
+
+
   
   @media screen and (min-width: 768px) {
     .anand__footer__container {

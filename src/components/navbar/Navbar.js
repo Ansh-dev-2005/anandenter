@@ -27,8 +27,9 @@ const Navbar = () => {
         <a href="/">Home</a>
         <a href="/About">About</a>
         <a href="/products">Products</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Visit Us</a>
+        <a href="/PriceList">Catalouge and Price list</a>
+        <a href="/Contact">Contact Us</a>
+        <a href="/VisitUs">Visit Us</a>
       </div>
       <div className="anand__navbar_menu" onClick={toggleMenu}>
         &#9776;
@@ -40,19 +41,23 @@ const Navbar = () => {
           </button>
           <ul>
             <li>
-              <a href="#">Home</a>
+              <a href="/">Home</a>
             </li>
             <li>
               <a href="/About">About</a>
             </li>
             <li>
-              <a href="#">Products</a>
+              <a href="/products">Products</a>
             </li>
             <li>
-              <a href="#">Contact Us</a>
+            <a href="/PriceList">Catalouge and Price list</a>
+
             </li>
             <li>
-              <a href="#">Visit Us</a>
+              <a href="/Contact">Contact Us</a>
+            </li>
+            <li>
+              <a href="/VisitUs">Visit Us</a>
             </li>
           </ul>
         </div>

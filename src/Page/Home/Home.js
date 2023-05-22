@@ -5,6 +5,7 @@ import Deals from '../../container/Our Deals/Deals'
 import Reviews from '../../container/Reviews/Reviews'
 import Footer from '../../container/Footer/Footer'
 import About from '../../container/About/About'
+import Form from '../../components/form/Form'
 const Home1 = () => {
   return (
     <div>

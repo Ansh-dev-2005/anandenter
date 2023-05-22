@@ -1,102 +1,52 @@
-import React from 'react'
-import Header from '../../container/Header/Header'
-import Footer from '../../container/Footer/Footer'
-import ImageGallery from 'react-image-gallery'
-import './products.css'
+import React from 'react';
+import Header from '../../container/Header/Header';
+import Footer from '../../container/Footer/Footer';
+import './products.css';
+import { useSelector } from 'react-redux';
+import Product from '../Products/Product/Product';
+import { CircularProgress, Grid } from '@material-ui/core';
 
-const Products = () => {
-  const brands = [
-    {
-      name: "Havells",
-      products: [
-        {
-          name: "Celling Fan",
-          images: [
-            {
-              original: "https://images.freeimages.com/images/previews/dc9/pennybacker-bridge-1636714.jpg",
-              thumbnail: "https://images.freeimages.com/images/previews/dc9/pennybacker-bridge-1636714.jpg"
-            },
-            {
-              original: "https://example.com/image2.jpg",
-              thumbnail: "https://example.com/thumb2.jpg"
-            },
-            {
-              original: "https://example.com/image3.jpg",
-              thumbnail: "https://example.com/thumb3.jpg"
-            }
-          ]
-        },
-        {
-          name: "Product 1B",
-          images: [
-            {
-              original: "https://example.com/image4.jpg",
-              thumbnail: "https://example.com/thumb4.jpg"
-            },
-            {
-              original: "https://example.com/image5.jpg",
-              thumbnail: "https://example.com/thumb5.jpg"
-            },
-            {
-              original: "https://example.com/image6.jpg",
-              thumbnail: "https://example.com/thumb6.jpg"
-            }
-          ]
-        },
-        {
-          name: "Product 1C",
-          images: [
-            {
-              original: "https://example.com/image7.jpg",
-              thumbnail: "https://example.com/thumb7.jpg"
-            },
-            {
-              original: "https://example.com/image8.jpg",
-              thumbnail: "https://example.com/thumb8.jpg"
-            },
-            {
-              original: "https://example.com/image9.jpg",
-              thumbnail: "https://example.com/thumb9.jpg"
-            }
-          ]
-        }
-      ]
-    },
-    // ...similar data for other brands...
-  ];
+const Products = ({ setCurrentId }) => {
+  const products = useSelector((state) => state.products);
 
-  const renderProduct = (product) => {
-    return (
-      <div className="product-container">
-        <h3>{product.name}</h3>
-        <ImageGallery items={product.images} />
-      </div>
-    )
-  }
+  // Group products by company
+  const groupedProducts = {};
+
+  products.forEach((product) => {
+    const company = product.company;
+    if (groupedProducts[company]) {
+      groupedProducts[company].push(product);
+    } else {
+      groupedProducts[company] = [product];
+    }
+  });
 
   return (
-    <>
+    <div className="home-container">
       <Header />
-      <div className="products-container">
-        <h1>Our Products</h1>
-        <ul className="brand-list">
-          {brands.map((brand, index) => (
-            <li key={index}>
-              <h2>{brand.name}</h2>
-              <ul className="product-list">
-                {brand.products.map((product, index) => (
-                  <li key={index}>
-                    {renderProduct(product)}
-                  </li>
-                ))}
-              </ul>
-            </li>
-          ))}
-        </ul>
+      <div className="product-showcase">
+        {!products.length ? (
+          <CircularProgress />
+        ) : (
+          <div>
+            {Object.keys(groupedProducts).map((company) => (
+              <div key={company}>
+                <h2>{company}</h2>
+                <Grid container spacing={3} className="product-grid">
+                  {groupedProducts[company].map((product, index) => (
+                    <Grid key={product._id} item xs={12} sm={6} md={4} lg={3} xl={3}>
+                      <Product product={product} setCurrentId={setCurrentId} className="product-card" />
+                    </Grid>
+                  ))}
+                </Grid>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
       <Footer />
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default Products
+export default Products;
